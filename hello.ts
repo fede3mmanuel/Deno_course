@@ -1,4 +1,4 @@
-const greeting: string = 1;
+const greeting: string = "hello world";
 
 console.log(greeting);
 

@@ -32,4 +32,36 @@ const getProducts = ({ response }: {response: any}) => {
     }
 }
 
-export { getProducts }
+// @desc Get single product
+
+// @route Get /api/v1/products/:id
+
+const getProduct = ({ response }: {response: any}) => {
+    response.body = 'get'   
+}
+
+// @desc Add a product
+
+// @route post /api/v1/products
+
+const addProduct = ({ response }: {response: any}) => {
+    response.body = 'add'
+}
+
+// @desc Update product
+
+// @route Put /api/v1/products/:id
+
+const updateProduct = ({ response }: {response: any}) => {
+    response.body = 'update'
+}
+
+// @desc Delete product
+
+// @route Delete /api/v1/products/:id
+
+const deleteProduct = ({ response }: {response: any}) => {
+    response.body = 'delete'
+}
+
+export { getProducts, getProduct, addProduct, updateProduct, deleteProduct }
